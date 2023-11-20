@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik+Mono+One&display=swap');
+
+/* reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:root {
+    --black : #060507;
+    --white : #FFFFFF;
+    --grey : #3F3E44;
+}
+
+#app {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'montserrat', serif;
+    /* height: 100vh; */
+}
+/* header */
+header {
+    display: flex;
+    align-items: start;
+}
+
+#navbar  {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+    gap: 4.5rem;
+}
+.navbar-items {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    top: 10px;
+    align-items: center;
+    gap: 4rem;
+}
+.navbar-items li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Rubik Mono One', monospace;
+    color: var(--white);
+    text-decoration: none;
+
+}
+.navbar-items a:hover {
+    color: #E7D4A6;
+    cursor: pointer;
+}
+
+.bg-waves-gold {
+    background: url("../images/waves-gold.png") no-repeat;
+    background-size: contain;
+    width: 375px;
+    height: 252px;
+  
+}
+.container-gold {
+   margin-left: 50px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 0;
+}
+
+/* main */
+#main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+}
+.bike-section > img:nth-child(1) {
+    width: 48rem;
+    position: relative;
+    bottom: 40px;
+}
+.bike-section > img:nth-child(2) {
+    position: absolute;
+    right: 251px;
+    top: 112px;
+    width: 16rem;
+}
+.bike-section > img:nth-child(3) {
+    position: absolute;
+    top: 156px;
+    right: 434px;
+    width: 42.45494rem;
+    height: 8.087879999999998rem;
+}
+.bike-section > img:nth-child(4) {
+    position: relative;
+    bottom: 95px;
+    z-index: 15;
+    width: 100%;
+}
+
+.bottom-section {
+    display: flex;
+    margin-top: -50px;
+}
+.bike-description {
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   
+}
+.bike-description p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    max-width: 406px;;
+    line-height: 200%;
+}
+.bike-description img {
+    position: relative;
+}
+.slide {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.bar-progress  {
+    height: 2px;
+    width: 14rem;
+    background: var(--white); 
+}
+.bar {
+    width: 30%;
+    height: 2px;
+    background: #A75B12; 
+}
+
+.side-section {
+    margin-top: 10rem;
+    margin-left: 2rem;
+}
+.stats {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.stat-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.stat-title h5 {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    color: #3F3E44;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+}
+.stat p:nth-child(1), .stat p:nth-child(3) {
+    font-size: 12px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+.stat p:nth-child(2) {
+    font-family: "Rubik Mono One";
+    font-size: 32px;
+    letter-spacing: -3px;
+    font-style: normal;
+    margin: 20px 0;
+    font-weight: 400;
+}
